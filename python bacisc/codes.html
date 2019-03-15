@@ -1,0 +1,38 @@
+<script src="codes.js"></script>
+<center>
+<H1>Face Recognition workshop!!</H1><hr>
+
+<input type="number" id="myFile" min=0 value=0>
+<hr>
+<button onclick="previous()">Previous</button>
+<textarea style="width:500px;height: 400px" id="output"></textarea>
+<button onclick='next()'>Next</button>
+</center>
+<script>
+var i=0;
+var input = document.getElementById("myFile");
+var output = document.getElementById("output");
+
+function previous()
+{
+    if(i>=0)
+    i--
+    output.value=code[i]
+    input.value=i
+}
+function next()
+{
+    if(i<code.length)
+    i++
+    output.value=code[i]
+    input.value=i
+
+}
+
+code=code.split("_._");
+output.value=code[0]
+input.addEventListener("change", function () {
+  output.value=code[this.value]
+  i=this.value
+});
+</script>
