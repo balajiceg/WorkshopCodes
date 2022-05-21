@@ -1,2 +1,2 @@
 # WorkshopCodes
-Codes used for conducting workshop
+Codes used for conducting python workshop as a part of CEG Tech Forum
